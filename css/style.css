@@ -1,0 +1,80 @@
+/* Базовые стили */
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    /* inherit - наследственность от родителя */
+    color: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.container {
+    max-width: 1350px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.header {
+    background-color: skyblue;
+}
+
+.hero {
+    background: url(../img/travel.jpg) no-repeat center/ cover;
+    min-height: 100vh;
+    display: flex;
+}
+
+.nav__list {
+    display: flex;
+    justify-content: space-between;
+    column-gap: 50px;
+}
+
+.nav__link {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__list:active {
+    text-decoration: underline 2px solid white;
+    text-underline-offset: 10px;
+}
+
+.hero__main {
+    background-color: seagreen;
+    flex: 1;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column - смена оси */
+    height: 100%;
+}
